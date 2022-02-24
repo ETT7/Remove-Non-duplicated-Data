@@ -50,7 +50,7 @@ def main():
     difFile = list(set(justFile) - set(justFile2))
     # print("difFile",difFile)
     difFolder = list(set(justFolder) - set(justFolder2))
-    delete(sorted(difFile, key=len), sorted(difFolder, key=len, reverse=True))
+    delete(sorted(difFile, key=len, reverse=True), sorted(difFolder, key=len, reverse=True))
     # print("difFolder",difFolder)
 
 def delete(difFile, difFolder):
